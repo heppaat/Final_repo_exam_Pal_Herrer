@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="registrationForm">
+      <input
+        type="email"
+        id="email"
+        autofocus="autofocus"
+        placeholder="Email address"
+      />
+      <input
+        type="password"
+        id="password"
+        autofocus="autofocus"
+        placeholder="Password"
+      />
+      <input
+        type="password"
+        id="confirmPassword"
+        autofocus="autofocus"
+        placeholder="Confirm your password"
+      />
+      <button type="submit" id="registerButton">Register</button>
+    </div>
+
+    <div id="successMessage" style="display: none">
+      Registration successfull!<br /><button id="backButton">
+        Back to homepage
+      </button>
+    </div>
+
+    <div id="errorMessage" style="display: none"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
